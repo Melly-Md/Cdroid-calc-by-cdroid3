@@ -1,11 +1,13 @@
 import time
 import math
+from colorama import init, Fore, Style
 
-print("WELCOME TO CDROID-CALC")
+print(f"{Fore.RED}WELCOME TO CDROID-CALC{Style.RESET_ALL}")
 
-username = input("Enter a Username, Example (Melly): ")
+username = input(f"{Fore.BLUE}Enter a Username, Example (Melly): {Style.RESET_ALL}")
 
-select = int(input(f"{username}, Pls Select an Option from the list of available choices below: \n" "Pls Note that Options 12 & 13 are not available in this version, Pls do well to stay tuned for Cdroid-calc_v2\n" "(01):Addition of Numbers\n" "(02):Multiplication of Numbers\n" "(03):Subtraction of Numbers\n" "(04):Division of Numbers\n"  "(05):Square of numbers\n" "(06):Sine of Numbers\n" "(07):Cosine of Numbers\n" "(08):Tan of Numbers\n" "(09):Logarithm of Numbers\n" "(10):Anti-logarithm of Numbers\n" "(11):Square root of Numbers\n" "(12):Differentiation of Numbers\n" "(13):Integration of Numbers\n" "(14):Area of  a Triangle\n" "(15):Area of a Rectangle\n" "(16):Area of a Square\n" "(17):Area of a Circle\n" "(18):Contact Developer\n" "(19):EXIT\n"))
+
+select = int(input(f"{username}, Pls Select an Option from the list of available choices below: \n" f"{Fore.RED}Pls Note that Options 12 & 13 are not available in this version, Pls do well to stay tuned for Cdroid-calc_v2\n{Style.RESET_ALL}" "(01):Addition of Numbers\n" "(02):Multiplication of Numbers\n" "(03):Subtraction of Numbers\n" "(04):Division of Numbers\n"  "(05):Square of numbers\n" "(06):Sine of Numbers\n" "(07):Cosine of Numbers\n" "(08):Tan of Numbers\n" "(09):Logarithm of Numbers\n" "(10):Anti-logarithm of Numbers\n" "(11):Square root of Numbers\n" "(12):Differentiation of Numbers\n" "(13):Integration of Numbers\n" "(14):Area of  a Triangle\n" "(15):Area of a Rectangle\n" "(16):Area of a Square\n" "(17):Area of a Circle\n" "(18):Contact Developer\n" "(19):EXIT\n"))
 
 if select == int(1):
      fnum = (int(input("Addition!, Enter the first mumber you would like to Add ")))
@@ -120,14 +122,14 @@ elif select == int(17):
      print(f"The Area of the Circle with Radius {circle_radius}cm is {Area_of_Circle}cm²")
   
 elif select == int(18):
-     print("Message via Whatsapp: +2349046239064\n" "Message via Telegram: +2349046239064\n" "Github Handle: Soon\n")
+     print(f"{Fore.GREEN}Message via Whatsapp: +2349046239064\n{Style.RESET_ALL}" f"{Fore.GREEN}Message via Telegram: +2349046239064\n {Style.RESET_ALL}" f"{Fore.GREEN}Github Handle: Soon\n{Style.RESET_ALL}")
      
 else:
      print("Pls Kindly Select From the Options numbered 1 to 18 excluding numbers 12 & 13!!")
      
 def tell():
   time.sleep(int(1))
-  print("CODED BY 71 MELLY")
+  print(f"{Fore.RED}CODED BY 71 MELLY{Style.RESET_ALL}")
 tell()
 time.sleep(float(0.45))
 tell()
